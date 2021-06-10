@@ -1,90 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>05第四次作业</title>
-    <style>
-        body{margin: 0;}
-        #container{width: 1200px;max-width: 0 auto;text-align: center;margin: 0 auto;}
-        #header{width: auto;height: 60px;background-color: brown;font-size: 20px;color: white;}
-        .logo{display: flex; align-items: center;margin-left: 50px;}
-        .logo span{margin-left: 25px;}  
-        .nav{list-style: none;}
-        .nav li{
-            float: right;
-            margin-left: 5px;
-        }
-        .nav li a{color: white;}
-        .between{justify-content: space-between;} 
-        .content ul{display: flex;
-        justify-content: space-around;
-        padding: 0;
-        text-align: center;
-        }
-        .content li{
-        float:left;
-        margin-left: 5px;}
-        .content ul li{
-            
-            list-style: none;
-            border: 1px solid #000000;
-            padding: 10px;
-            cursor: pointer;
-        }
-        #foot{width: auto;height: 300px;background-color: brown;font-size: 20px;color: white;text-align: center;}
-        #foot img{margin-top: 50;}
-        #foot p{text-align: center;font-size: 28px;margin-bottom: 3px;}
-    </style>
+    <title>05个人展示页</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
+
+
 <body>
-    <div id="header">
-        <div class="logo between">
-            <div class="logo">
-        <img src="001.webp" alt=""width="50px">
-        <span>极客大叔的网站</span>
-    
-    </div>
-    <ul class="nav"> 
-        <li><a href="#container">喜欢的电影</a></li>
-        <li><a href="#container">喜欢的书</a></li>
-        <li><a href="#">聊一聊</a></li>
+    <!-- <div class="box1"> -->
+    <div class="nav">
+        <div class="logo">极客大叔的爱好</div>
+
+
+        <ul>
+            <li><a href="#move">喜欢的电影</a></li>
+            <li><a href="#book">喜欢的书</a></li>
+            <li><a href="#talk">聊一聊</a></li>
         </ul>
     </div>
+
+    <h3 id="move">喜欢的电影<hr style="width: 100px;margin-left: 740px;height: 3px;background-color: black;"></h3>
+    <div class="box">
+        <li><img src="02.webp">
+            <p>阿凡达</p>
+        </li>
+        <li><img src="02.webp" alt="">
+            <p>阿凡达</p>
+        </li>
+        <li><img src="02.webp" alt="">
+            <p>阿凡达</p>
+        </li>
+        <li style="margin-right: 0;"><img src="02.webp" alt="">
+            <p>阿凡达</p>
+        </li>
+
+
     </div>
-    <div text-align="center">
-     <div id="container"class="content">
-         <h1 style="margin-left: 50px;">喜欢的电影</h1>
-         <hr style="width: 100px;border-bottom: 5px;
-         color: black;margin-left: 570px;">
-         <ul >
-             <li><img src="02.webp" alt=""><span>阿凡达</span></li>
-             <li><img src="02.webp" alt=""><span>阿凡达</span></li>
-             <li><img src="02.webp" alt=""><span>阿凡达</span></li>
-             <li><img src="02.webp" alt=""><span>阿凡达</span></li>
-         </ul>
-             </div>
-             <div id="container"class="content">
-                <h1 style="margin-left: 50px;">喜欢的书</h1>
-                <hr style="width: 100px;border-bottom: 5px;
-                color: black;margin-left: 570px;">
-                <ul >
-                    <li><img src="03.jpg" alt=""><span>摆渡人</span></li>
-                    <li><img src="03.jpg" alt=""><span>摆渡人</span></li>
-                    <li><img src="03.jpg" alt=""><span>摆渡人</span></li>
-                    <li><img src="03.jpg" alt=""><span>摆渡人</span></li>
-                </ul>
-                    </div>
-             </div>
-             <div id="foot">
-                <ul >
-                    <li><span>王小波说他是一只特立独行的猪，那我就当个一只特立独行的鸟吧。交个朋友么，扫下右边的二维码。
-                    </span><img src="04.png" alt=""></li>
-                   </ul>
-                   <br>
-                   <br>
-                   <hr>
-            <p >版权信息</p>
-             </div>
+    <div class="clear"></div>
+    <h3 id="book">喜欢的书籍<hr style="width: 100px;margin-left: 740px;height: 3px;background-color: black;"></h3>
+    <div class="box">
+        <li><img src="03.jpg" alt="">
+            <p>摆渡人</p>
+        </li>
+        <li><img src="03.jpg" alt="">
+            <p>摆渡人</p>
+        </li>
+        <li><img src="03.jpg" alt="">
+            <p>摆渡人</p>
+        </li>
+        <li style="margin-right: 0;"><img src="03.jpg" alt="">
+            <p>摆渡人</p>
+        </li>
+
+
+    </div>
+    <div class="clear"></div>
+    <div class="footer">
+        <ul>
+            <li>
+                王小波说他是一只特立独行的猪，那我就当个一只特立独行的鸟吧。交个朋友么，扫下右边的二维码。
+
+
+
+            </li>
+            <li id="talk"><img src="04.png" title="交个朋友吧！"></li>
+        </ul>
+        <div class="clear"></div>
+        <hr style="color: silver;">
+        <div class="ban">版权所有@loey-w</div>
+    </div>
+    <!-- </div> -->
 </body>
+
 </html>

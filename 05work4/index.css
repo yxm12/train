@@ -1,0 +1,145 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+a {
+    text-decoration: none;
+    color: mintcream;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 55px;
+}
+.box1{
+    width: 1200px;
+    margin: auto;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?29m8bz');
+    src:  url('fonts/icomoon.eot?29m8bz#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?29m8bz') format('truetype'),
+      url('fonts/icomoon.woff?29m8bz') format('woff'),
+      url('fonts/icomoon.svg?29m8bz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  .logo {
+    font-family: 'icomoon';
+}
+
+.nav{
+    
+    width:100%;
+    margin: auto;
+    height: 50px;
+    line-height: 55px;
+    color: mintcream;
+ 
+    background-color: red;
+}
+.nav .logo{
+    float: left;
+    margin-left: 50px;
+}
+.nav ul li{
+    float: right;
+    /* background-color: orangered; */
+}
+.nav ul li a{
+    padding: 20px;
+}
+/* .nav {
+    display: flex;
+    width: 100%;
+    height: 50px;
+
+    line-height: 35px;
+    color: mintcream;
+    justify-content: space-between;
+    background-color: rosybrown;
+}
+
+.nav .logo {
+    margin-left: 150px;
+}
+
+.nav ul {
+    display: flex;
+    margin-right: 50px;p6i
+}
+
+.nav ul li {
+    margin-left: 10px;
+} */
+
+
+.box {
+    background-color: olivedrab;
+    width: 1200px;
+    margin: auto;
+}
+
+.box img {
+    width: 100%;
+    margin: auto;
+}
+
+.box {
+    margin-top: 35px;
+}
+
+.box li {
+    text-align: center;
+    float: left;
+    list-style: none;
+    width: 268px;
+    padding: 10px;
+    border: orangered solid 2px;
+    margin-right: 10px;
+}
+
+.box li:hover {
+    transform: translateY(-15px);
+    border-top: 2px solid #000;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    width: 100%;
+    height: 255px;
+    color: mintcream;
+    margin-top: 55px;
+    background-color: red;
+}
+
+.footer ul li:nth-child(1){
+    float: left;
+
+    /* display: flex; */
+    /* justify-content: space-between; */
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.footer ul li:nth-child(2){
+    float: right;
+
+   
+    margin-right: 73px;
+    margin-top: 15px;
+}
+.ban {
+    text-align: center;
+}
