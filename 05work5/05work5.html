@@ -80,6 +80,14 @@
         $('.clear').click(function(){
             $('.screen').empty();
         })
+        //回车事件
+            //监听弹幕输入框
+            $("#btn").keyup(function (e) {
+                if (e.keyCode == 13) {
+                    $("#send").click();
+                }
+            });
+
         $('input').keyup(function(e){
             //console.log(e.keyCode);
             if(e.keyCode==13){
