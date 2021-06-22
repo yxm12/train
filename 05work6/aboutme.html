@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>aboutme</title>
+  <style type="text/css">
+    html {
+      height: 100%
+    }
+
+    body {
+      height: 100%;
+      margin: 0px;
+      padding: 0px
+    }
+
+    #container {
+      height: 400px;
+      width: 600px;
+    }
+
+    .map {
+      width: 1200px;
+      margin: 0 auto;
+      height: 400px;
+
+    }
+
+    #header {
+      width: 1200px;
+      height: 100px;
+      font-size: 20px;
+      color: black;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-left: 5px;
+    }
+
+    .logo span {
+      margin-left: 20px;
+    }
+
+    .nav li {
+      display: flex;
+      list-style: none;
+      float: right;
+      margin-left: 20px;
+      margin-top: 15px;
+      font-size: 25px;
+    }
+
+    .nav li a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .foot {
+      margin: 0 auto;
+      background-color: lightgray;
+      width: auto;
+      height: 450px;
+    }
+
+    .foot li {
+      display: inline-block;
+      list-style: none;
+      margin-top: 50px;
+      padding-right: 100px;
+      text-align: center;
+    }
+
+    .nav li a:hover {
+
+      color: red;
+
+    }
+  </style>
+  <script type="text/javascript"
+    src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=fexc5dRIGSclGyGwvG8Hlco859bw05iE">
+    </script>
+
+</head>
+
+<body>
+  <div style="background-color: rgb(231, 231, 226);width: auto;height: auto;">
+    <div id="header">
+      <div style="display: flex;justify-content: space-between;">
+        <div class="logo">
+          <img src="6-4.png" alt="" style="width: 80px;height: 80px;">
+          <span>旅游网</span>
+        </div>
+        <div class="nav">
+          <ul>
+            <li><a href="aboutme.html">关于我们</a></li>
+            <li><a href="new.html">新闻</a></li>&nbsp;&nbsp;
+            <li><a href="work6.html">首页</a></li>&nbsp;&nbsp;
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p style="text-align: center;font-size: 28px;">关于我们</p>
+  </div>
+  <div class="map">
+    <div id="container" style="float: left;"></div>
+    <div style="height: 400px;width: 550px;float: right;font-size: 18px;border: black 2px;">
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;我们团度假提供数百条度假产品线路，包括“三亚”、“云南”、“港澳”、“泰国”、“欧洲”“名山”、“都市”、“自驾游”等20余个度假专卖店，每个“专卖店”内拥有不同产品组合线路多条。
+        客人可选择由北京、上海、广州、深圳、杭州、成都、沈阳、南京、青岛、厦门、武汉十一地出发。此外，旅游还详细分成了主题旅游，周边旅游，境内旅游，港澳台旅游等多种不同形式旅游。
+        在每一种形式中，内容详尽丰富，可适合客人做不同选择。</p>
+      <div class="logo">
+        <img src="6-16.png" alt="" style="width: 60px;height: 60px;">
+        <span>福州市仓山区万达广场A区</span>
+      </div>
+      <div class="logo">
+        <img src="6-15.png" alt="" style="width: 60px;height: 60px;">
+        <span>1054372808@qq.com</span>
+      </div>
+      <div class="logo">
+        <img src="6-7.png" alt="" style="width: 60px;height: 60px;">
+        <span>客服中心:400-123-456</span>
+      </div>
+    </div>
+  </div><br><br>
+  <div class="foot">
+    <div style="width: 1200px; margin: 0 auto;height: 300px;">
+      <div style="width: 900px;;height: 160px;float: left;">
+        <ul>
+          <li><img src="6-16.png" alt="" style="width: 150px;height: 150px;"><br><br>
+            <p>福州市仓山区万达广场A区</p>
+          </li>
+          <li><img src="6-15.png" alt="" style="width: 150px;height: 150px;"><br><br>
+            <p>1054372808@qq.com</p>
+          </li>
+          <li><img src="6-7.png" alt="" style="width: 150px;height: 150px;"><br><br>
+            <p>客服中心:400-123-456</p>
+          </li>
+        </ul>
+      </div>
+      <div style="float: right;margin-top: 30px;">
+        <img src="6-14.png" alt="">
+        <br>
+        <p style="margin-left: 60px;">扫码加入旅游团！</p>
+      </div>
+    </div>
+    <div style="width: 200px;margin: 0 auto;">
+      <hr width="200px"><br>
+      <p>&nbsp;&nbsp;版权所有@旅游者联盟</p>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var map = new BMapGL.Map("container");
+    // 创建地图实例 
+    var point = new BMapGL.Point(116.404, 39.915);
+    // 创建点坐标 
+    map.centerAndZoom(point, 15);
+// 初始化地图，设置中心点坐标和地图级别
+  </script>
+</body>
+
+</html>
