@@ -134,8 +134,8 @@
     let id = window.location.search.split('=')[1]
     axios.get(`https://lingqule.papamk.com/wp-json/w2w/v1/products/${id}`).then(function (res) {
       console.log(res.data);
-      let title = $(`<h1>${res.data.name}</h1>`);
-      let img = $(`<img src=${res.data.images[0].src} />`);
+      let title = $(`<h1 style="text-align:center">${res.data.name}</h1>`);
+      let img = $(`<img style="margin-left:350px;width:600px;height:600px;" src=${res.data.images[0].src} />`);
       $('.container').append(title);
       $('.container').append(img);
     })
