@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>首页</title>
+  <!-- bootstrap的样式 -->
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script><!-- 导航的 -->
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script><!-- 导航的 -->
+  <!--sy  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"crossorigin="anonymous"><!-- 导入bootstrap v5的CSS 文件去除integrity部分 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script><!-- 导入bootstrap v5的js文件集成包去除integrity部分 -->
+ <!--  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script> -->
+<!--  --><!--关于我们 --><!--
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css"> bootstrap的样式 -->
+<!--  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-olOxEXxDwd20BlATUibkEnjPN3sVq2YWmYOnsMYutq7X8YcUdD6y/1I+f+ZOq/47" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-NU/T4JKmgovMiPaK2GP9Y+TVBQxiaiYFJB6igFtfExinKlzVruIK6XtKqxCGXwCG" crossorigin="anonymous"></script>
+ 
+<!--  -->
+  <style>
+
+    /*导航栏*/
+    .left img:hover{
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+
+}
+    /* 轮播图 */
+    #lb {
+      width: 100%;
+      height: 700px;
+      margin: 0px auto;
+    }
+
+    /*中部*/
+    .zb {
+      height: auto;
+    }
+
+    /*s*/
+    h2 {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .zb .s1 {
+      background-color: rgb(238, 237, 237);
+      height: auto;
+    }
+
+    .zb .s1 li {
+      list-style: none;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .zb .s1 li img {
+      width: 150px;
+      height: 150px;
+    }
+
+    /*z*/
+    .z1 img {
+      width: 550px;
+      height: 550px;
+    }
+
+.z1 p {
+/*      width: 600px; */
+      font-size: 30px;
+    }
+
+    /*x*/
+    .zb .x1 li {
+ 
+      list-style: none;
+    }
+
+    .zb .x1 li img {
+      height: 200px;
+      width: 100%;
+    }
+
+    .zb .x1 li p {
+      font-size: 15px;
+    }
+
+
+    /* footer */
+    .footer {
+      height: auto;
+
+    }
+
+    .footer .f1 li {
+      list-style: none;
+    }
+
+    .footer .f1 li img {
+      height: 150px;
+      width: 150px;
+    }
+
+    .footer .f1 li p {
+      font-size: 15px;
+    }
+    .card3{
+  margin-top: 30px;
+}
+    /**/
+    .card1{
+    width: 200px;
+    height: 200px;
+}
+.card1 img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.6s;
+    -ms-transition: all 0.8s;
+}
+.card1 img:hover{
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+  </style>
+</head>
+
+<body>
+  <!--3导航-->
+  <div style="background-color: rgb(214, 214, 214);width: 100%;">
+  <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light bg-rgb(214, 214, 214">
+        <div class="left">
+          <img style="width: 100px; height: 90px; float: left;" src="年代/dm.png" style="float: left;" />
+          <h4 style="color: black;float: left;margin-top: 27px;">觉醒年代</h4>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="首页.html">
+                <h3>首页 &nbsp;</h3>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="新闻.html">
+                <h3>新闻 &nbsp;</h3>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="个人展示.html">
+                <h3>个人展示 &nbsp;</h3>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="关于我们.html">
+                <h3>关于我们 &nbsp;</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div> 
+  </div>
+    <!-- 轮播图 -->
+<!--  -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="年代/21.jpg" class="d-block w-100" alt="..."style="width: 1500px;height: 700px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>南陈北李相约建党</h2>
+        <h3>1920年2月，天寒地冻、漫天阴霾，一辆骡车缓缓驶出北京城，车上的两人一副商人装扮，他们在冰冷的骡车里满怀激情地讨论着，相约在北京和上海分头筹备党组织。</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="年代/17.jpg" class="d-block w-100" alt="..."style="width: 1500px;height: 700px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>驱张运动</h2>
+        <h3>1918年3月，皖系军阀张敬尧就任湖南都督和省长，他纵兵烧杀抢掠，搜刮民膏民脂，限制舆论，摧残教育，镇压学生的爱国运动，给人民造成巨大的灾难。1919年9月，毛泽东、彭璜等人在湖南发动秘密驱逐张敬尧运动。</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="年代/14-2.png" class="d-block w-100" alt="..."style="width: 1500px;height: 700px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>夜校教学</h2>
+        <h3>李大钊对发展近代教育极为重视,在这方面有许多精辟的论述。他把发展教育﹑培养人才提到“国本”的高度来认识,大力呼吁“昌学”。</h3>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--  -->
+
+
+  <!-- 中部 -->
+  <div class="container">
+    <div class="zb">
+
+      <!-- s -->
+      <div class="s">
+        <h2><b>服务范围</b></h2>
+        <div class="s1">
+          <ul class="row">
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card1">
+                <img src="年代/t4.png">
+                <h4>时代背景</h4>
+              </div>
+            </li>
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card1">
+                <img src="年代/t2.png">
+                <h4>剧情图片</h4>
+              </div>
+            </li>
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card1">
+                <img src="年代/t1.png">
+                <h4>独家专访</h4>
+              </div>
+            </li>
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card1">
+                <img src="年代/t3.png">
+                <h4>独家花絮</h4>
+              </div>
+            </li>
+          </ul>
+        </div><!-- s1 -->
+      </div><!-- s -->
+
+      <!-- z -->
+      <div class="z">
+        <h2><b>人物介绍</b></h2>
+        <hr class="featurette-divider" style="margin-top: 50px;">
+        <div class="z1">
+
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+              <img src="年代/陈独秀.jpg" />
+            </div>
+            <p class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <b>陈独秀</b><br>
+              陈独秀（1879年10月9日-1942年5月27日），中国共产党创始人和早期领导人之一。原名庆同，字仲甫。安徽怀宁人。
+              早年留学日本。1915年在上海创办《新青年》杂志，举起民主与科学的旗帜。1916年任北京大学教授。1918年和李大钊创办《每周评论》，
+              宣传马克思主义，是五四新文化运动的主要领导人之一。 </p>
+            <hr class="featurette-divider" style="margin-top: 30px;">
+          </div><!-- row -->
+
+          <div class="row">
+            <p class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <b>李大钊</b><br>
+              李大钊（1889年10月29日-1927年4月28日），字守常，河北乐亭人。1907年考入天津北洋法政专门学校 ，1913年毕业后东渡日本，
+              入东京早稻田大学政治本科学习，是中国共产主义运动的先驱，伟大的马克思主义者，杰出的无产阶级革命家，中国共产党的主要创始人之一。
+              李大钊同志一生的奋斗历程，同马克思主义在中国传播的历史紧密相连，同中国共产党创建的历史紧密相连，同中国共产党领导的为中国人
+              民谋幸福的历史紧密相连 </p>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <img src="年代/李大钊.jpg" />
+            </div>
+            <hr class="featurette-divider" style="margin-top: 30px;">
+          </div><!-- row -->
+
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <img src="年代/毛泽东.jpg" />
+            </div>
+            <p class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <b style="text-align: center;">毛泽东</b><br>
+              毛泽东，字润之，笔名子任。1893年12月26日生于湖南湘潭韶山冲一个农民家庭。1976年9月9日在北京逝世。中国人民的领袖，马克思主义者，
+              伟大的无产阶级革命家、战略家和理论家，中国共产党、中国人民解放军和中华人民共和国的主要缔造者和领导人，诗人，书法家。</p>
+            <hr class="featurette-divider" style="margin-top: 30px;">
+          </div><!-- row -->
+
+          <div class="row">
+            <p class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <b>蔡元培</b><br>
+              蔡元培（1868年1月11日－1940年3月5日），字鹤卿，又字仲申、民友、孑民，乳名阿培，并曾化名蔡振、周子余，汉族，浙江绍兴山阴县（今浙江绍兴）人，
+              原籍浙江诸暨。革命家、教育家、政治家。民主进步人士，国民党中央执委、国民政府委员兼监察院院长。中华民国首任教育总长。 </p>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <img src="年代/蔡元培.jpg" />
+            </div>
+            <hr class="featurette-divider" style="margin-top: 30px;">
+          </div><!-- row -->
+
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <img src="年代/胡适.jpg" />
+            </div>
+            <p class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <b style="text-align: center;">胡适</b><br>
+              胡适(1891年12月17日~1962年2月24日)，男，曾用名嗣穈，字希疆，学名洪骍，后改名适，字适之。 思想家、文学家、哲学家。安徽绩溪人，
+              以倡导"白话文"、领导新文化运动闻名于世。</p>
+            <hr class="featurette-divider" style="margin-top: 30px;">
+          </div><!-- row -->
+        </div><!-- z1 -->
+      </div><!-- z -->
+
+<!-- x -->
+<div class="x">
+  <h2><b>新闻动态</b></h2>
+  <hr class="featurette-divider">
+  <div class="x1">
+      <ul class="row">
+        <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card2">
+              <img src="年代/26..png" />
+              <p><b>独家!觉醒年代与北京大学[组图]</b> <br>
+              该剧以“南陈北李”相约建党的革命故事为线索，全景展现了从1915年《青年杂志》问世，到中国共产党成立这一段风云激荡的伟大历史进程</p>
+        </div>
+        </li>
+        <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card2">
+              <img src="年代/4.jpg" />
+              <p><b>觉醒年代，延乔路尽头便是繁华大道！觉醒年代，延乔路尽头便是繁华大道！</b><br>
+                剧中陈延年、陈乔年等年轻革命烈士英勇就义的画面让无数观众感动泪奔。</p>
+					
+            </div>
+        </li>
+        <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card2">
+              <img src="年代/24.png" />
+              <p><b>来北京，重温觉醒年代！</b><br>
+                【来北京，重温觉醒年代】北京，马克思主义在中国最早的传播地，中国共产党最早创立组织并开展革命活动的城市之一。</p>
+              
+            </div>
+        </li>
+        <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card2">
+              <img src="年代/28.webp.jpg" />
+              <p><b>《觉醒年代》唤醒旧时代的红色记忆，是对丧文化的重拳出击</b><br>
+                《觉醒年代》是庆祝中国共产党建党100周年的系列剧之一，讲述了新文化运动期间，陈独秀李大钊等人引领新文化运动，解放新思潮的故事。</p>
+            </div>
+        </li>
+    </ul>
+    </div><!-- x1 -->
+  </div><!-- x -->
+  <hr class="featurette-divider">
+
+    </div><!-- zb -->
+  </div><!-- container -->
+  <!-- 尾部 -->
+  <div style="background-color: rgb(214, 214, 214);width: 100%;">
+    <div class="container">
+      <div class="footer">
+        <div class="f1">
+          <ul class="row">
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card3">
+                <img src="年代/地图.png" />
+                <h4 style="margin-top: 10px;">福建福州市闽侯县大学城</h4>
+              </div>
+            </li>
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card3">
+                <img src="年代/邮 箱.png" />
+                <h4 style="margin-top: 10px;">2583762797@qq.com</h4>
+              </div>
+            </li>
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card3">
+                <img src="年代/客服.png" />
+                <h4 style="margin-top: 10px;">400-123-4567</h4>
+              </div>
+            </li>
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card3">
+                <img src="年代/9.png" />
+                <h4 style="margin-top: 10px;">扫一扫加入觉醒年代</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div style="width: 300px;margin: 0 auto;">
+          <hr style="margin-top: 50px;width:300px;"><br>
+          <h4 style="margin-left: 30px;">版权所有@觉醒年代</h4>
+        </div>  
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>关于我们</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous"><!-- 导入bootstrap v5的CSS 文件去除integrity部分 -->
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=fexc5dRIGSclGyGwvG8Hlco859bw05iE"></script>
+<!--关于我们 -->
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css"><!-- bootstrap的样式 -->
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script><!-- 导航的 -->
+<!-- <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>导航的 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script> -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!--  -->
+<style>
+html{height:100%} 
+body{height:100%;margin:0px;padding:0px} 
+/*导航栏*/
+
+/*中部*/
+.map{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+}
+#container{
+height: 500px;
+width: 100%;
+float: left;
+}
+
+/* footer */
+.footer{
+	height: auto;
+
+}
+.footer .f1 li{
+ list-style: none;
+}
+.footer .f1 li img{
+  height: 150px;
+  width: 150px;
+}
+.footer .f1 li p{
+  font-size: 15px;
+}
+.card3{
+  margin-top: 30px;
+}
+/**/
+
+</style>
+</head>
+ 
+<body>
+<!--3导航-->
+<div style="background-color: rgb(214, 214, 214);width: 100%;">
+  <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light bg-rgb(214, 214, 214">
+        <div class="left">
+          <img style="width: 100px; height: 90px; float: left;" src="年代/dm.png" style="float: left;" />
+          <h4 style="color: black;float: left;margin-top: 27px;">觉醒年代</h4>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="首页.html">
+                <h3>首页 &nbsp;</h3>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="新闻.html">
+                <h3>新闻 &nbsp;</h3>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="个人展示.html">
+                <h3>个人展示 &nbsp;</h3>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="关于我们.html">
+                <h3>关于我们 &nbsp;</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div> 
+  </div>
+ 
+<!-- 中部 -->
+<div class="container">
+<div class="zb">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <div id="container"></div>
+    </div>
+
+<div style="height: 500px;width: 100%;font-size: 20px;" class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;本剧以1915年《青年杂志》问世到1921年《新青年》成为中国共产党机关刊物为贯穿，
+          展现了从新文化运动到中国共产党建立这段波澜壮阔的历史画卷，讲述觉醒年代的百态人生。该剧以李大钊、陈独秀、
+          胡适从相识、相知到分手，走上不同人生道路的传奇故事为基本叙事线，以毛泽东、陈延年、陈乔年、邓中夏、赵世炎
+          等革命青年追求真理的坎坷经历为辅助线，艺术地再现了一批名冠中华的文化大师和一群理想飞扬的热血青年演绎出的
+          一段充满激情、燃烧理想的澎湃岁月</p>
+          <div class="logo">
+              <img src="年代/地图.png" alt="" style="width: 65px;height: 65px;">
+              <span>福建福州市闽侯县大学城</span>
+           </div>
+           <div class="logo">
+              <img src="年代/邮 箱.png" alt="" style="width: 65px;height: 65px;">
+              <span>2583762797@qq.com</span>
+           </div> 
+           <div class="logo">
+              <img src="年代/客服.png" alt="" style="width: 65px;height: 65px;">
+              <span>400-123-456</span>
+           </div> 
+        </div>
+
+  </div><!-- row -->
+</div><!-- zb -->
+</div><!-- container -->
+
+  <!-- 尾部 -->
+  <div style="background-color: rgb(214, 214, 214);width: 100%;">
+    <div class="container">
+      <div class="footer">
+        <div class="f1">
+          <ul class="row">
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card3">
+                <img src="年代/地图.png" />
+                <h4 style="margin-top: 10px;">福建福州市闽侯县大学城</h4>
+              </div>
+            </li>
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card3">
+                <img src="年代/邮 箱.png" />
+                <h4 style="margin-top: 10px;">2583762797@qq.com</h4>
+              </div>
+            </li>
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card3">
+                <img src="年代/客服.png" id="tp"/>
+                <h4 style="margin-top: 10px;">400-123-4567</h4>
+              </div>
+            </li>
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card3">
+                <img src="年代/9.png" />
+                <h4 style="margin-top: 10px;">扫一扫加入觉醒年代</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div style="width: 300px;margin: 0 auto;">
+          <hr style="margin-top: 50px;width:300px;"><br>
+          <h4 style="margin-left: 30px;">版权所有@觉醒年代</h4>
+        </div>  
+      </div>
+    </div>
+  </div>
+<!--  -->
+<script type="text/javascript">
+  var map = new BMapGL.Map("container"); 
+  map.centerAndZoom(new BMapGL.Point(119.176895,26.072713),16); 
+  map.enableScrollWheelZoom(true); 
+  var marker1 = new BMapGL.Marker(new BMapGL.Point(119.176895,26.072713));
+  map.addOverlay(marker1);
+</script>
+<!--  -->
+<!--  -->
+<!-- Button trigger modal -->
+
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">联系我们</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">我的通讯地址</label>
+            <input type="emaill" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">你想对我说的话</label>
+            <textarea type="password" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+        <button id="sumit" type="button" class="btn btn-primary">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<!--  -->
+<script>
+  $(function(){
+    var myModal = new bootstrap.Modal(document.getElementById('exampleModal'))
+    $('#tp').click(function(){
+      console.log("fff")
+      myModal.show()
+    })
+    $('#sumit').click(function(){
+      let email = $('#exampleInputEmail1').val()
+      let message = $('#exampleInputPassword1').val()
+      console.log("email",email,message)
+      axios({
+        url:'https://kekpcs3t.lc-cn-n1-shared.com/1.1/classes/data',
+        
+                method:'post',
+                headers:{
+                    'X-LC-Id': 'kEkpcS3t78nYFHVX91HNhRJ5-gzGzoHsz',
+                    'X-LC-Key':"ihbA2p5TTIxCgyLjRDwVfkfw"
+                },
+                data:{
+                  emaill:email,
+                  message:message
+                }
+     })
+     myModal.hide()
+    })
+/*     $('#menus').click(function(){
+      
+    }) */
+  })
+</script>
+
+</html>
