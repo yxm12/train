@@ -19,80 +19,39 @@
 
 <!--  -->
   <style>
+
+
     /*导航栏*/
 
     /*中部*/
- .containter{
-    width: 1200px;
-    margin: 0 auto;
-} 
-.nav{
-    display: flex;
-    justify-content: center;
+.container img{
+    width: 1110px;
+    height: 800px;
+}
+ /*尾部*/
+ .f1 li {
+ 
+ list-style: none;
 }
 
-.nav li{
-    display: flex;
-    align-items: center;
-
+.f1 li img {
+ height: 200px;
+ width: 100%;
 }
 
-
- .list{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0;
+.f1 li h4 {
+text-align: center;
 }
- .list li{
-    border: 1px solid seashell;
-} 
-.list img{
-    width: 300px;
-    height: 300px;
-    /*  */
-    cursor: pointer;
-    transition: all 0.6s;
-    -ms-transition: all 0.8s;
-} 
-  .list img:hover{
-    transform: scale(1.2);
-    -ms-transform: scale(1.2);
-} 
-.list h5:hover{
-    color: rgb(212, 20, 20);
-} 
-/**/
-
-    /* footer */
-    .footer {
-      height: auto;
-
-    }
-
-    .footer .f1 li {
-      list-style: none;
-    }
-
-    .footer .f1 li img {
-      height: 150px;
-      width: 150px;
-    }
-
-    .footer .f1 li p {
-      font-size: 15px;
-    }
     .card3{
   margin-top: 30px;
 }
- 
+    /**/
   </style>
 </head>
 
 <body>
- <!--3导航-->
- <div style="background-color: rgb(214, 214, 214);width: 100%;">
+<!--3导航-->
+<div style="background-color: rgb(214, 214, 214);width: 100%;">
   <div class="container">
       <nav class="navbar navbar-expand-md navbar-light bg-rgb(214, 214, 214">
         <div class="left">
@@ -134,33 +93,8 @@
     </div> 
   </div>
 
-  <!-- 中部 -->
-  <div class="container">
-<!--  API -->
-
-
-  <ul class="list"></ul>
-
-
-<!-- 分页-->
-  <nav aria-label="Page navigation example" style="margin-left: 500px;">
-    <ul class="pagination">
-        <li class="page-item">
-            <a onclick="pre()" class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-            </a>
-        </li>
-        <li onclick="getUrl(1)" class="page-item"><a class="page-link" href="#">1</a></li>
-        <li onclick="getUrl(2)" class="page-item"><a class="page-link" href="#">2</a></li>
-        <li onclick="getUrl(3)" class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-            <a onclick="next()" class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-            </a>
-        </li>
-    </ul>
-</nav>    
-
+<!-- 中部 --> 
+<div id="main" class="container">
 </div><!-- container -->
     <!-- 尾部 -->
     <div style="background-color: rgb(214, 214, 214);width: 100%;">
@@ -201,44 +135,35 @@
         </div>
       </div>
     </div>
-
+<!--  -->
 <script>
-  let current = Number(window.location.href.split("?page=")[1]) || 1;
-  function pre() {
-      if (current > 1) {
-          getUrl(current - 1);
-      }
-  }
-  function next() {
-      if (current < 3) {
-          getUrl(current + 1);
-      }
-  }
-  function getUrl(page) {
-      window.location.href = `?page=${page}`
-  }
-
-  page(current);
-  function page(page) {
-      current = page;
-      $('.list').empty();
-      axios.get(`https://www.fastmock.site/mock/5ce71d8706db53f310e523f9a9c974b4/test-01/api?page=${page}`).then(function (res) {
-          console.log(res.data.data, res.data.data.list);
-          for (let i = 0; i < res.data.data.list.length; i++) {
-              console.log(res.data);
-              let li = $('<li></li>');
-              li.append(`<img width='500px' height='300px' src=${res.data.data.list[i].img}>`);
-              li.append(`<h5 style="text-align:center;">${res.data.data.list[i].title}</h5>`)
-              li.append(`<span style="margin-left:170px;">${res.data.data.list[i].time}</span>`)
-              li.attr('id', res.data.data.list[i].id);
-              $('.list').append(li);
-          }
-          $('.list li').click(function () {
-              window.location.href = `新闻详情.html?id=${$(this).attr('id')}`
-
-          })
+  var i = window.location.search.split('=')[1];
+      console.log(i, "id")
+      axios.get(`https://www.fastmock.site/mock/5ce71d8706db53f310e523f9a9c974b4/test-01/xq?id=${i}`).then(function (res) {
+          console.log(res.data.data.list);
+          let obj = res.data.data.list
+          $('#main').append(`
+  <div class="text-center mt-3 mb-3">
+      <h2><strong>${res.data.data.list.title}</strong></h2>
+      <p style="color:darkgrey; font-size: 20px;">${obj.time}</p>
+  </div>
+      <hr>
+  
+      <div class="text-center col-lg-12">
+          <img src="${obj.img}" class = "img-fluid img-thumbnail" img style="width:1000px;height:800px;"alt="">
+      </div>
+      <div class="container">
+      <div class="row">
+          <div class="text-center col-lg-12">
+              <p style="font-size: 30px;" class="text-muted">
+                  ${obj.synopsis}
+              </p>
+          </div>
+      </div>
+  </div>
+      `)
       })
-  }
+
 </script>
 </body>
 </html>

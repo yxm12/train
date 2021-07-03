@@ -35,14 +35,14 @@
 
     .foot {
       margin: 0 auto;
-      background-color: rgb(245, 241, 241);
+      background-color: white;
       width: 100%;
       ;
       height: auto;
     }
 
     .foot .thumbnail {
-      background-color: rgb(245, 241, 241);
+      background-color: white;
       border: rgb(245, 241, 241);
     }
     .scroll-con {
@@ -158,43 +158,41 @@ opacity: 1;
  
   <br>
 <!-- 尾部 -->
-<div class="row">
-  <div class="foot">
-   <div class="container">
-       <div class="col-xs-12 col-md-6 col-sm-12 col-lg-3 col-xl-3">
-
-         <a href="#" class="thumbnail">
-             <img class="scroll-con-img" data-src="6-16.png" alt="..."style="width: 150px;height: 150px;">
-         </a>
-         <h4 style="text-align: center;">福州市仓山区万达广场A区</h4>
-     </div>
-     <div class="col-xs-12 col-md-6 col-sm-12 col-lg-3 col-xl-3">
-       <a href="#" class="thumbnail">
-           <img class="scroll-con-img" data-src="6-15.png" alt="..."style="width: 150px;height: 150px;">
-       </a>
-       <h4 style="text-align: center;">1054372808@qq.com</h4>
-   </div>
-   <div class="col-xs-12 col-md-6 col-sm-12 col-lg-3 col-xl-3">
-     <a href="#" class="thumbnail">
-         <img id="footerImg" class="scroll-con-img" data-src="6-7.png" alt="..."style="width: 150px;height: 150px;">
-     </a>
-     <h4 style="text-align: center;" >客服中心:400-123-456</h4>
- </div>
- <div class="col-xs-12 col-md-6 col-sm-12 col-lg-3 col-xl-3">
-   <a href="#" class="thumbnail">
-       <img class="scroll-con-img" data-src="6-14.png" alt="..."style="width: 250px;height: 250px;">
-   </a>
-   <h4 style="text-align: center;">扫码加入旅游团！</h4>
- </div>
-     <br>
-    <div style="width: 100%;height: 3px;background-color: black;clear: both;"></div>
-     <div style="text-align: center;">
-       <p>版权所有@yxm</p>
-     </div>
+<div class="container">
+<div class="foot">
+  <div class="row">
+           <div class="col-xs-12 col-md-6 col-sm-12 col-lg-3 col-xl-3">
+               <a href="#" class="thumbnail">
+                   <img class="scroll-con-img"  data-src="6-16.png" alt="..." style="width: 150px;height: 150px;">
+               </a>
+               <h4 style="text-align: center;">福州市仓山区万达广场A区</h4>
+           </div>
+           <div class="col-xs-12 col-md-6 col-sm-12 col-lg-3 col-xl-3">
+               <a href="#" class="thumbnail">
+                   <img class="scroll-con-img"  data-src="6-15.png" alt="..." style="width: 150px;height: 150px;">
+               </a>
+               <h4 style="text-align: center;">1054372808@qq.com</h4>
+           </div>
+           <div class="col-xs-12 col-md-6 col-sm-12 col-lg-3 col-xl-3">
+               <a href="#" class="thumbnail">
+                   <img id="footerImg" class="scroll-con-img" data-src="6-7.png" alt="..." style="width: 150px;height: 150px;">
+               </a>
+               <h4 style="text-align: center;">客服中心:400-123-456</h4>
+           </div>
+           <div class="col-xs-12 col-md-6 col-sm-12 col-lg-3 col-xl-3">
+               <a href="#" class="thumbnail">
+                   <img class="scroll-con-img"  data-src="6-14.png" alt="..." style="width: 250px;height: 250px;">
+               </a>
+               <h4 style="text-align: center;">扫码加入旅游团！</h4>
+           </div>
+           <br>
+           <div style="width: 100%;height: 3px;background-color: black;clear: both;"></div>
+           <div style="text-align: center;">
+               <p>版权所有@yxm</p>
+           </div>
+       </div>
    </div>
   </div>
-
- </div>
 <!-- Modal -->
 <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -232,7 +230,7 @@ opacity: 1;
      })
      $('#submit').click(function(){
        let email = $('#exampleInputEmail1').val()
-       let message = $('exampleInputPassword1').val()
+       let message = $('#exampleInputPassword1').val()
        console.log("email",email,message)
       axios({
         url:'https://uwkvcogg.lc-cn-n1-shared.com/1.1/classes/test',
